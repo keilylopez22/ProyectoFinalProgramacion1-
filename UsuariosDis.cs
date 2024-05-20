@@ -1,4 +1,4 @@
-﻿using PROYECTOFINALPROGRA1.clases.proyecto.GestorDeVentas;
+﻿using PROYECTOFINALPROGRA1.clases;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace PROYECTOFINALPROGRA1
 {
-    public partial class Usuarios : Form
+    public partial class UsuariosDis : Form
     {
         private bool esNuevo = false;
-        public Usuarios()
+        public UsuariosDis()
         {
             InitializeComponent();
         }
@@ -115,7 +115,8 @@ namespace PROYECTOFINALPROGRA1
             usuario.contrasena= txtApellido.Text;
             usuario.email = txtEmail.Text;
             
-            dao.insertarUsuarios(usuario);
+
+            dao.InsertarUsuarios(usuario);
             habilitarCampos(true);
             listarUsuarios();
 

@@ -72,7 +72,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clases\Coordinador.cs" />
     <Compile Include="clases\DA0.cs" />
+    <Compile Include="clases\DaoCatedratico.cs" />
+    <Compile Include="clases\DaoCoordinador.cs" />
+    <Compile Include="clases\DaoCurso.cs" />
+    <Compile Include="clases\DaoEstudiante.cs" />
+    <Compile Include="clases\DaoFacultad.cs" />
     <Compile Include="clases\Usuario.cs" />
     <Compile Include="login.cs">
       <SubType>Form</SubType>
@@ -94,11 +100,11 @@
     <Compile Include="Registro.Designer.cs">
       <DependentUpon>Registro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usuarios.cs">
+    <Compile Include="UsuariosDis.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Usuarios.Designer.cs">
-      <DependentUpon>Usuarios.cs</DependentUpon>
+    <Compile Include="UsuariosDis.Designer.cs">
+      <DependentUpon>UsuariosDis.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
@@ -119,8 +125,8 @@
     <EmbeddedResource Include="Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Usuarios.resx">
-      <DependentUpon>Usuarios.cs</DependentUpon>
+    <EmbeddedResource Include="UsuariosDis.resx">
+      <DependentUpon>UsuariosDis.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -1,6 +1,6 @@
 ﻿namespace PROYECTOFINALPROGRA1
 {
-    partial class Usuarios
+    partial class UsuariosDis
     {
         /// <summary>
         /// Required designer variable.

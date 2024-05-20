@@ -1,28 +1,29 @@
-﻿using System.Data.SqlClient;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
+using System.Data.SqlClient;
 using MySqlConnector;
-
-
+using System.Xml.Linq;
 
 namespace PROYECTOFINALPROGRA1.clases
 {
-    public class Dao
-    {
+    public class DaoCoordinador
+        {
+
         private string connectionString = "server=127.0.0.1;" +
                                           "user=root;" +
                                           "password=;" +
                                           "database=lms;"; // Cambia el nombre de la base de datos aquí
 
         // Método para obtener todos los usuarios
-        public List<Usuario> ObtenerTodosLosUsuarios()
+        public List<Coordinador> ObtenerTodosLosCoordinadores()
         {
-            List<Usuario> listaUsuarios = new List<Usuario>();
+            List<Coordinador> listaCoordinadores = new List<Coordinador>();
 
-            using ( MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 // Apertura de la conexión
                 conn.Open();
@@ -35,7 +36,7 @@ namespace PROYECTOFINALPROGRA1.clases
                     {
                         while (reader.Read())
                         {
-                            Usuario usuario = new Usuario
+                            Coordinador coordinador = new Coordinador
                             {
                                 id = Convert.ToInt32(reader["id"]),
                                 nombre = reader["nombre"].ToString(),
@@ -43,16 +44,16 @@ namespace PROYECTOFINALPROGRA1.clases
                                 email = reader["email"].ToString()
                             };
 
-                            listaUsuarios.Add(usuario);
+                            listaCoordinadores.Add(usuario);
                         }
                     }
                 }
             }
-            return listaUsuarios;
+            return listaCoordinadores;
         }
 
         // Método para obtener un usuario por id
-        public Usuario ObtenerUsuariosPorId(int id)
+        public Usuario ObtenerCoordinadorPorId(int id)
         {
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
@@ -69,7 +70,7 @@ namespace PROYECTOFINALPROGRA1.clases
                     {
                         if (reader.Read())
                         {
-                            Usuario usuario = new Usuario
+                            Coordinador coordinador = new Coordinador
                             {
                                 id = Convert.ToInt32(reader["id"]),
                                 nombre = reader["nombre"].ToString(),
@@ -77,7 +78,7 @@ namespace PROYECTOFINALPROGRA1.clases
                                 email = reader["email"].ToString()
                             };
 
-                            return usuario;
+                            return coordinador;
                         }
                         else
                         {
@@ -89,7 +90,7 @@ namespace PROYECTOFINALPROGRA1.clases
         }
 
         // Método para insertar un nuevo usuario
-        public void InsertarUsuarios(Usuario usuario)
+        public void InsertarCoordinador(Coordinador coordinador)
         {
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
@@ -100,9 +101,9 @@ namespace PROYECTOFINALPROGRA1.clases
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@nombre", usuario.nombre);
-                    cmd.Parameters.AddWithValue("@contrasena", usuario.contrasena);
-                    cmd.Parameters.AddWithValue("@email", usuario.email);
+                    cmd.Parameters.AddWithValue("@nombre", coordinador.nombre);
+                    cmd.Parameters.AddWithValue("@contrasena", coordinador.contrasena);
+                    cmd.Parameters.AddWithValue("@email", coordinador.email);
 
                     cmd.ExecuteNonQuery();
                 }
@@ -110,7 +111,7 @@ namespace PROYECTOFINALPROGRA1.clases
         }
 
         // Método para actualizar un usuario
-        public void ActualizarUsuario(Usuario usuario)
+        public void Actualizoordinador coordinador)
         {
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
@@ -120,10 +121,10 @@ namespace PROYECTOFINALPROGRA1.clases
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@nombre", usuario.nombre);
-                    cmd.Parameters.AddWithValue("@contrasena", usuario.contrasena);
-                    cmd.Parameters.AddWithValue("@email", usuario.email);
-                    cmd.Parameters.AddWithValue("@id", usuario.id);
+                    cmd.Parameters.AddWithValue("@nombre", coordinador.nombre);
+                    cmd.Parameters.AddWithValue("@contrasena", coordinador.contrasena);
+                    cmd.Parameters.AddWithValue("@email", coordinador.email);
+                    cmd.Parameters.AddWithValue("@id", coordinador.id);
 
                     cmd.ExecuteNonQuery();
                 }
@@ -131,7 +132,7 @@ namespace PROYECTOFINALPROGRA1.clases
         }
 
         // Método para eliminar un usuario
-        public void EliminarUsuarios(int id)
+        public void EliminarCoordinador(int id)
         {
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
@@ -146,5 +147,7 @@ namespace PROYECTOFINALPROGRA1.clases
                 }
             }
         }
+
     }
+    
 }
