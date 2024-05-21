@@ -23,11 +23,9 @@ namespace PROYECTOFINALPROGRA1
         private void habilitarCampos(bool readOnly)
         {
             txtNombre.ReadOnly = readOnly;
-            txtApellido.ReadOnly = readOnly;
-            txtEmail.ReadOnly = readOnly;
-            txtTelefono.ReadOnly = readOnly;
-            txtDireccion.ReadOnly = readOnly;
-            txtProfesion.ReadOnly = readOnly;
+            
+            txtcontrasena.ReadOnly = readOnly;
+            email.ReadOnly = readOnly;
             txtnom.ReadOnly = readOnly;
             txtId.ReadOnly = readOnly;
         }
@@ -51,11 +49,9 @@ namespace PROYECTOFINALPROGRA1
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             txtNombre.Clear();
-            txtApellido.Clear();
-            txtEmail.Clear();
-            txtTelefono.Clear();
-            txtDireccion.Clear();
-            txtProfesion.Clear();
+            
+            txtcontrasena.Clear();
+            email.Clear();
             txtnom.Clear();
             txtId.Clear();
         }
@@ -99,8 +95,9 @@ namespace PROYECTOFINALPROGRA1
             int id = (int)Fila.Cells[0].Value;
             usuario.id = id;
             usuario.nombre = txtNombre.Text;
-            usuario.contrasena = txtApellido.Text;
-            usuario.email = txtEmail.Text;
+            usuario.contrasena = txtcontrasena.Text;
+            
+            usuario.email = email.Text;
            
             dao.ActualizarUsuario(usuario);
             habilitarCampos(true);
@@ -112,7 +109,7 @@ namespace PROYECTOFINALPROGRA1
             Dao dao = new Dao();    
             Usuario usuario = new Usuario();
             usuario.nombre =txtNombre.Text;
-            usuario.contrasena= txtApellido.Text;
+            usuario.contrasena= txtcontrasena.Text;
             usuario.email = txtEmail.Text;
             
 
@@ -139,11 +136,11 @@ namespace PROYECTOFINALPROGRA1
         {
             DataGridViewRow Fila = DgvUsuarios.SelectedRows[0];
             txtNombre.Text = (String)Fila.Cells[1].Value;
-            txtApellido.Text= (String)Fila.Cells[2].Value;
-            txtEmail.Text = (String)Fila.Cells[3].Value;
-            txtTelefono.Text = (String)Fila.Cells[4].Value;
-            txtDireccion.Text = (String)Fila.Cells[5].Value;
-            txtProfesion.Text = (String)Fila.Cells[6].Value;
+           
+            txtcontrasena.Text = (String)Fila.Cells[2].Value;
+           
+            email.Text = (String)Fila.Cells[3].Value;
+
             habilitarCampos(false);
             HabilitarbtnGuardarCancelar(true);
             esNuevo = false;
@@ -151,10 +148,10 @@ namespace PROYECTOFINALPROGRA1
         private void limpiarCampos()
         {
             txtNombre.Text = "";
-            txtApellido.Text = "";
-            txtEmail.Text = "";
-            txtDireccion.Text = "";
-            txtProfesion.Text = "";
+          
+            txtcontrasena.Text = "";
+            
+            email.Text = "";
             txtnom.Text = "";
             txtId.Text = "";
         }
