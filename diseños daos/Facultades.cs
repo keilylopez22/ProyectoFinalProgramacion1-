@@ -10,15 +10,17 @@ using System.Windows.Forms;
 
 namespace PROYECTOFINALPROGRA1.diseños_daos
 {
-    public partial class Catedraticodise : Form
+    public partial class Facultades : Form
     {
-        public Catedraticodise()
+        public Facultades()
         {
             InitializeComponent();
         }
 
-        private void groupDatos_Enter(object sender, EventArgs e)
+        private void btnLimpiar_Click(object sender, EventArgs e)
         {
+
+         
 
         }
     }

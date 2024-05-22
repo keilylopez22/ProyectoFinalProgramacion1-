@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace PROYECTOFINALPROGRA1.diseños_daos
 {
-    public partial class Facultaddise : Form
+    public partial class Cursos : Form
     {
-        public Facultaddise()
+        public Cursos()
         {
             InitializeComponent();
         }
 
-        private void btnLimpiar_Click(object sender, EventArgs e)
+        private void Cursodise_Load(object sender, EventArgs e)
         {
 
         }

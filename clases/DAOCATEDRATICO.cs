@@ -14,7 +14,7 @@ namespace PROYECTOFINALPROGRA1.clases
             "password=progra2024;" +
             "database=progra1_2024;";
         //metodo para obtener todos los coordinadores
-        public List<Catedratico> ObtenerTodosLosCoordinadores()
+        public List<Catedratico> ObtenerTodosLosCatedraticos()
         {
             List<Catedratico> listaCatedraticos = new List<Catedratico>();
 

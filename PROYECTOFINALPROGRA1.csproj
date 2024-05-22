@@ -84,35 +84,41 @@
     <Compile Include="clases\Estudiante.cs" />
     <Compile Include="clases\Facultad.cs" />
     <Compile Include="clases\Usuario.cs" />
-    <Compile Include="diseños daos\Catedraticodise.cs">
+    <Compile Include="diseños daos\Catedraticos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="diseños daos\Catedraticodise.Designer.cs">
-      <DependentUpon>Catedraticodise.cs</DependentUpon>
+    <Compile Include="diseños daos\Catedraticos.Designer.cs">
+      <DependentUpon>Catedraticos.cs</DependentUpon>
     </Compile>
-    <Compile Include="diseños daos\Coordinadordise.cs">
+    <Compile Include="diseños daos\Coordinadores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="diseños daos\Coordinadordise.Designer.cs">
-      <DependentUpon>Coordinadordise.cs</DependentUpon>
+    <Compile Include="diseños daos\Coordinadores.Designer.cs">
+      <DependentUpon>Coordinadores.cs</DependentUpon>
     </Compile>
-    <Compile Include="diseños daos\Cursodise.cs">
+    <Compile Include="diseños daos\Cursos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="diseños daos\Cursodise.Designer.cs">
-      <DependentUpon>Cursodise.cs</DependentUpon>
+    <Compile Include="diseños daos\Cursos.Designer.cs">
+      <DependentUpon>Cursos.cs</DependentUpon>
     </Compile>
-    <Compile Include="diseños daos\Estudiantedise.cs">
+    <Compile Include="diseños daos\Estudiantes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="diseños daos\Estudiantedise.Designer.cs">
-      <DependentUpon>Estudiantedise.cs</DependentUpon>
+    <Compile Include="diseños daos\Estudiantes.Designer.cs">
+      <DependentUpon>Estudiantes.cs</DependentUpon>
     </Compile>
-    <Compile Include="diseños daos\Facultaddise.cs">
+    <Compile Include="diseños daos\Facultades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="diseños daos\Facultaddise.Designer.cs">
-      <DependentUpon>Facultaddise.cs</DependentUpon>
+    <Compile Include="diseños daos\Facultades.Designer.cs">
+      <DependentUpon>Facultades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="diseños daos\FRMMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="diseños daos\FRMMenu.Designer.cs">
+      <DependentUpon>FRMMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
@@ -134,26 +140,29 @@
     <Compile Include="Registro.Designer.cs">
       <DependentUpon>Registro.cs</DependentUpon>
     </Compile>
-    <Compile Include="diseños daos\UsuariosDis.cs">
+    <Compile Include="diseños daos\Usuarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="diseños daos\UsuariosDis.Designer.cs">
-      <DependentUpon>UsuariosDis.cs</DependentUpon>
+    <Compile Include="diseños daos\Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="diseños daos\Catedraticodise.resx">
-      <DependentUpon>Catedraticodise.cs</DependentUpon>
+    <EmbeddedResource Include="diseños daos\Catedraticos.resx">
+      <DependentUpon>Catedraticos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="diseños daos\Coordinadordise.resx">
-      <DependentUpon>Coordinadordise.cs</DependentUpon>
+    <EmbeddedResource Include="diseños daos\Coordinadores.resx">
+      <DependentUpon>Coordinadores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="diseños daos\Cursodise.resx">
-      <DependentUpon>Cursodise.cs</DependentUpon>
+    <EmbeddedResource Include="diseños daos\Cursos.resx">
+      <DependentUpon>Cursos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="diseños daos\Estudiantedise.resx">
-      <DependentUpon>Estudiantedise.cs</DependentUpon>
+    <EmbeddedResource Include="diseños daos\Estudiantes.resx">
+      <DependentUpon>Estudiantes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="diseños daos\Facultaddise.resx">
-      <DependentUpon>Facultaddise.cs</DependentUpon>
+    <EmbeddedResource Include="diseños daos\Facultades.resx">
+      <DependentUpon>Facultades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="diseños daos\FRMMenu.resx">
+      <DependentUpon>FRMMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
@@ -174,8 +183,8 @@
     <EmbeddedResource Include="Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="diseños daos\UsuariosDis.resx">
-      <DependentUpon>UsuariosDis.cs</DependentUpon>
+    <EmbeddedResource Include="diseños daos\Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

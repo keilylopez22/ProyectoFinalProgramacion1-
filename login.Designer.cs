@@ -171,6 +171,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "login";
             this.Text = "  Seguridad del sistema ";
+            this.Load += new System.EventHandler(this.login_Load);
             this.Datos.ResumeLayout(false);
             this.Datos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

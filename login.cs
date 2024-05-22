@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PROYECTOFINALPROGRA1.diseños_daos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,16 +24,16 @@ namespace PROYECTOFINALPROGRA1
             string usuario = txtusuario.Text.Trim();
             string password = txtcontrasena.Text.Trim();
 
-            if (usuario == "Keily" && password == "123")
+            if (usuario == "keily" && password == "123")
             {
                 // Oculta el formulario actual
                 this.Hide();
 
                 // Crea una instancia del siguiente formulario
-                //Form2 form2 = new Form2();
+              FRMMenu fRMMenu = new FRMMenu();
 
                 // Muestra el siguiente formulario
-                //form2.Show();
+              fRMMenu.Show();
                 Console.WriteLine("el crud se abrio correctamente");
             }
             else
@@ -52,6 +53,11 @@ namespace PROYECTOFINALPROGRA1
             this.Hide();
             Registro registro = new Registro();
             registro.Show();
+        }
+
+        private void login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

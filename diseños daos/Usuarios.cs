@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace PROYECTOFINALPROGRA1
 {
-    public partial class UsuariosDis : Form
+    public partial class Usuarios : Form
     {
         private bool esNuevo = false;
-        public UsuariosDis()
+        public Usuarios()
         {
             InitializeComponent();
         }
@@ -22,12 +22,12 @@ namespace PROYECTOFINALPROGRA1
         
         private void habilitarCampos(bool readOnly)
         {
-            txtNombre.ReadOnly = readOnly;
+            txtNombreUsuario.ReadOnly = readOnly;
             
-            txtcontrasena.ReadOnly = readOnly;
-            email.ReadOnly = readOnly;
-            txtnom.ReadOnly = readOnly;
-            txtId.ReadOnly = readOnly;
+            txtcontrasenaUsuario.ReadOnly = readOnly;
+            txtEmailUsuario.ReadOnly = readOnly;
+            txtnombreUsuarioBuscar.ReadOnly = readOnly;
+            txtIdUsuarioBuscar.ReadOnly = readOnly;
         }
         private void listarUsuarios()
         {
@@ -41,19 +41,19 @@ namespace PROYECTOFINALPROGRA1
         }
         private void HabilitarbtnGuardarCancelar(bool enable)
         {
-            btnGuardar.Enabled = enable;
-            btnCancelar.Enabled = enable;
+            btnGuardarUsuario.Enabled = enable;
+            btnCancelarUsuario.Enabled = enable;
         }
 
        
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            txtNombre.Clear();
+            txtNombreUsuario.Clear();
             
-            txtcontrasena.Clear();
-            email.Clear();
-            txtnom.Clear();
-            txtId.Clear();
+            txtcontrasenaUsuario.Clear();
+            txtEmailUsuario.Clear();
+            txtnombreUsuarioBuscar.Clear();
+            txtIdUsuarioBuscar.Clear();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -94,10 +94,10 @@ namespace PROYECTOFINALPROGRA1
             DataGridViewRow Fila = DgvUsuarios.SelectedRows[0];
             int id = (int)Fila.Cells[0].Value;
             usuario.id = id;
-            usuario.nombre = txtNombre.Text;
-            usuario.contrasena = txtcontrasena.Text;
+            usuario.nombre = txtNombreUsuario.Text;
+            usuario.contrasena = txtcontrasenaUsuario.Text;
             
-            usuario.email = email.Text;
+            usuario.email = txtEmailUsuario.Text;
            
             dao.ActualizarUsuario(usuario);
             habilitarCampos(true);
@@ -108,9 +108,9 @@ namespace PROYECTOFINALPROGRA1
         {
             Dao dao = new Dao();    
             Usuario usuario = new Usuario();
-            usuario.nombre =txtNombre.Text;
-            usuario.contrasena= txtcontrasena.Text;
-            usuario.email = txtEmail.Text;
+            usuario.nombre =txtNombreUsuario.Text;
+            usuario.contrasena= txtcontrasenaUsuario.Text;
+            usuario.email = txtEmailUsuario.Text;
             
 
             dao.InsertarUsuarios(usuario);
@@ -129,17 +129,17 @@ namespace PROYECTOFINALPROGRA1
             Dao dao = new Dao();
             dao.EliminarUsuarios(id);
             listarUsuarios();
-            txtNombre.Text = (string)Fila.Cells[1].Value;
+            txtNombreUsuario.Text = (string)Fila.Cells[1].Value;
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             DataGridViewRow Fila = DgvUsuarios.SelectedRows[0];
-            txtNombre.Text = (String)Fila.Cells[1].Value;
+            txtNombreUsuario.Text = (String)Fila.Cells[1].Value;
            
-            txtcontrasena.Text = (String)Fila.Cells[2].Value;
+            txtcontrasenaUsuario.Text = (String)Fila.Cells[2].Value;
            
-            email.Text = (String)Fila.Cells[3].Value;
+            txtEmailUsuario.Text = (String)Fila.Cells[3].Value;
 
             habilitarCampos(false);
             HabilitarbtnGuardarCancelar(true);
@@ -147,13 +147,13 @@ namespace PROYECTOFINALPROGRA1
         }
         private void limpiarCampos()
         {
-            txtNombre.Text = "";
+            txtNombreUsuario.Text = "";
           
-            txtcontrasena.Text = "";
+            txtcontrasenaUsuario.Text = "";
             
-            email.Text = "";
-            txtnom.Text = "";
-            txtId.Text = "";
+            txtEmailUsuario.Text = "";
+            txtnombreUsuarioBuscar.Text = "";
+            txtIdUsuarioBuscar.Text = "";
         }
 
         private void btnAnterior_Click(object sender, EventArgs e)

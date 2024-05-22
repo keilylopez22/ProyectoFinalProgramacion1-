@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace PROYECTOFINALPROGRA1.diseños_daos
 {
-    public partial class Cursodise : Form
+    public partial class Coordinadores : Form
     {
-        public Cursodise()
+        public Coordinadores()
         {
             InitializeComponent();
         }
 
-        private void Cursodise_Load(object sender, EventArgs e)
+        private void Coordinadores_Load(object sender, EventArgs e)
         {
 
         }
