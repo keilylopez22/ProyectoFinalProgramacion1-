@@ -37,7 +37,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.btnMenuEstudiantes = new System.Windows.Forms.Button();
             this.pnlSubMenuCatedraticos = new System.Windows.Forms.Panel();
-            this.btnAsignacionCatedraticos = new System.Windows.Forms.Button();
             this.btnCatedraticos = new System.Windows.Forms.Button();
             this.btnMenuCatedraticos = new System.Windows.Forms.Button();
             this.pnlSubMenuCurso = new System.Windows.Forms.Panel();
@@ -47,8 +46,9 @@
             this.btnCataloCursos = new System.Windows.Forms.Button();
             this.btnCursos = new System.Windows.Forms.Button();
             this.pnllogo = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlcontenedor = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlmenulateral.SuspendLayout();
             this.pnlSubMenuEstudiantes.SuspendLayout();
             this.pnlSubMenuCatedraticos.SuspendLayout();
@@ -70,7 +70,7 @@
             this.pnlmenulateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlmenulateral.Location = new System.Drawing.Point(0, 0);
             this.pnlmenulateral.Name = "pnlmenulateral";
-            this.pnlmenulateral.Size = new System.Drawing.Size(200, 559);
+            this.pnlmenulateral.Size = new System.Drawing.Size(200, 693);
             this.pnlmenulateral.TabIndex = 0;
             // 
             // pnlSubMenuEstudiantes
@@ -80,9 +80,9 @@
             this.pnlSubMenuEstudiantes.Controls.Add(this.button3);
             this.pnlSubMenuEstudiantes.Controls.Add(this.button4);
             this.pnlSubMenuEstudiantes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSubMenuEstudiantes.Location = new System.Drawing.Point(0, 405);
+            this.pnlSubMenuEstudiantes.Location = new System.Drawing.Point(0, 503);
             this.pnlSubMenuEstudiantes.Name = "pnlSubMenuEstudiantes";
-            this.pnlSubMenuEstudiantes.Size = new System.Drawing.Size(200, 100);
+            this.pnlSubMenuEstudiantes.Size = new System.Drawing.Size(200, 212);
             this.pnlSubMenuEstudiantes.TabIndex = 9;
             // 
             // btnAsignaciones
@@ -90,11 +90,11 @@
             this.btnAsignaciones.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAsignaciones.FlatAppearance.BorderSize = 0;
             this.btnAsignaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAsignaciones.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAsignaciones.Location = new System.Drawing.Point(0, 69);
+            this.btnAsignaciones.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAsignaciones.Location = new System.Drawing.Point(0, 143);
             this.btnAsignaciones.Name = "btnAsignaciones";
             this.btnAsignaciones.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnAsignaciones.Size = new System.Drawing.Size(200, 23);
+            this.btnAsignaciones.Size = new System.Drawing.Size(200, 83);
             this.btnAsignaciones.TabIndex = 6;
             this.btnAsignaciones.Text = "Asignaciones";
             this.btnAsignaciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -105,11 +105,11 @@
             this.btnGrupos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnGrupos.FlatAppearance.BorderSize = 0;
             this.btnGrupos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGrupos.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrupos.Location = new System.Drawing.Point(0, 46);
+            this.btnGrupos.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGrupos.Location = new System.Drawing.Point(0, 90);
             this.btnGrupos.Name = "btnGrupos";
             this.btnGrupos.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnGrupos.Size = new System.Drawing.Size(200, 23);
+            this.btnGrupos.Size = new System.Drawing.Size(200, 53);
             this.btnGrupos.TabIndex = 5;
             this.btnGrupos.Text = "Grupos";
             this.btnGrupos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -121,10 +121,10 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(0, 23);
+            this.button3.Location = new System.Drawing.Point(0, 47);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(200, 23);
+            this.button3.Size = new System.Drawing.Size(200, 43);
             this.button3.TabIndex = 4;
             this.button3.Text = "Evaluaciones ";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -139,7 +139,7 @@
             this.button4.Location = new System.Drawing.Point(0, 0);
             this.button4.Name = "button4";
             this.button4.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(200, 23);
+            this.button4.Size = new System.Drawing.Size(200, 47);
             this.button4.TabIndex = 3;
             this.button4.Text = "Materiales";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -152,7 +152,7 @@
             this.btnMenuEstudiantes.FlatAppearance.BorderSize = 0;
             this.btnMenuEstudiantes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuEstudiantes.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuEstudiantes.Location = new System.Drawing.Point(0, 370);
+            this.btnMenuEstudiantes.Location = new System.Drawing.Point(0, 468);
             this.btnMenuEstudiantes.Name = "btnMenuEstudiantes";
             this.btnMenuEstudiantes.Size = new System.Drawing.Size(200, 35);
             this.btnMenuEstudiantes.TabIndex = 8;
@@ -163,39 +163,24 @@
             // 
             // pnlSubMenuCatedraticos
             // 
-            this.pnlSubMenuCatedraticos.Controls.Add(this.btnAsignacionCatedraticos);
+            this.pnlSubMenuCatedraticos.Controls.Add(this.button5);
             this.pnlSubMenuCatedraticos.Controls.Add(this.btnCatedraticos);
             this.pnlSubMenuCatedraticos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSubMenuCatedraticos.Location = new System.Drawing.Point(0, 270);
+            this.pnlSubMenuCatedraticos.Location = new System.Drawing.Point(0, 368);
             this.pnlSubMenuCatedraticos.Name = "pnlSubMenuCatedraticos";
             this.pnlSubMenuCatedraticos.Size = new System.Drawing.Size(200, 100);
             this.pnlSubMenuCatedraticos.TabIndex = 7;
-            // 
-            // btnAsignacionCatedraticos
-            // 
-            this.btnAsignacionCatedraticos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAsignacionCatedraticos.FlatAppearance.BorderSize = 0;
-            this.btnAsignacionCatedraticos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAsignacionCatedraticos.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAsignacionCatedraticos.Location = new System.Drawing.Point(0, 23);
-            this.btnAsignacionCatedraticos.Name = "btnAsignacionCatedraticos";
-            this.btnAsignacionCatedraticos.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnAsignacionCatedraticos.Size = new System.Drawing.Size(200, 23);
-            this.btnAsignacionCatedraticos.TabIndex = 3;
-            this.btnAsignacionCatedraticos.Text = "Asignaciones";
-            this.btnAsignacionCatedraticos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAsignacionCatedraticos.UseVisualStyleBackColor = true;
             // 
             // btnCatedraticos
             // 
             this.btnCatedraticos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCatedraticos.FlatAppearance.BorderSize = 0;
             this.btnCatedraticos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCatedraticos.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCatedraticos.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCatedraticos.Location = new System.Drawing.Point(0, 0);
             this.btnCatedraticos.Name = "btnCatedraticos";
             this.btnCatedraticos.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnCatedraticos.Size = new System.Drawing.Size(200, 23);
+            this.btnCatedraticos.Size = new System.Drawing.Size(200, 39);
             this.btnCatedraticos.TabIndex = 2;
             this.btnCatedraticos.Text = "Catedraticos";
             this.btnCatedraticos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -208,9 +193,9 @@
             this.btnMenuCatedraticos.FlatAppearance.BorderSize = 0;
             this.btnMenuCatedraticos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenuCatedraticos.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuCatedraticos.Location = new System.Drawing.Point(0, 235);
+            this.btnMenuCatedraticos.Location = new System.Drawing.Point(0, 310);
             this.btnMenuCatedraticos.Name = "btnMenuCatedraticos";
-            this.btnMenuCatedraticos.Size = new System.Drawing.Size(200, 35);
+            this.btnMenuCatedraticos.Size = new System.Drawing.Size(200, 58);
             this.btnMenuCatedraticos.TabIndex = 6;
             this.btnMenuCatedraticos.Text = "Catedraticos";
             this.btnMenuCatedraticos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -224,9 +209,9 @@
             this.pnlSubMenuCurso.Controls.Add(this.button1);
             this.pnlSubMenuCurso.Controls.Add(this.btnCataloCursos);
             this.pnlSubMenuCurso.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSubMenuCurso.Location = new System.Drawing.Point(0, 135);
+            this.pnlSubMenuCurso.Location = new System.Drawing.Point(0, 152);
             this.pnlSubMenuCurso.Name = "pnlSubMenuCurso";
-            this.pnlSubMenuCurso.Size = new System.Drawing.Size(200, 100);
+            this.pnlSubMenuCurso.Size = new System.Drawing.Size(200, 158);
             this.pnlSubMenuCurso.TabIndex = 1;
             // 
             // btnCalificaciones
@@ -235,10 +220,10 @@
             this.btnCalificaciones.FlatAppearance.BorderSize = 0;
             this.btnCalificaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalificaciones.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalificaciones.Location = new System.Drawing.Point(0, 69);
+            this.btnCalificaciones.Location = new System.Drawing.Point(0, 143);
             this.btnCalificaciones.Name = "btnCalificaciones";
             this.btnCalificaciones.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnCalificaciones.Size = new System.Drawing.Size(200, 23);
+            this.btnCalificaciones.Size = new System.Drawing.Size(200, 10);
             this.btnCalificaciones.TabIndex = 5;
             this.btnCalificaciones.Text = "Calificaciones";
             this.btnCalificaciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -251,10 +236,10 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(0, 46);
+            this.button2.Location = new System.Drawing.Point(0, 85);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(200, 23);
+            this.button2.Size = new System.Drawing.Size(200, 58);
             this.button2.TabIndex = 4;
             this.button2.Text = "Evaluaciones ";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -265,11 +250,11 @@
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(0, 23);
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(0, 35);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(200, 23);
+            this.button1.Size = new System.Drawing.Size(200, 50);
             this.button1.TabIndex = 3;
             this.button1.Text = "Materiales";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -280,11 +265,11 @@
             this.btnCataloCursos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCataloCursos.FlatAppearance.BorderSize = 0;
             this.btnCataloCursos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCataloCursos.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCataloCursos.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCataloCursos.Location = new System.Drawing.Point(0, 0);
             this.btnCataloCursos.Name = "btnCataloCursos";
             this.btnCataloCursos.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnCataloCursos.Size = new System.Drawing.Size(200, 23);
+            this.btnCataloCursos.Size = new System.Drawing.Size(200, 35);
             this.btnCataloCursos.TabIndex = 2;
             this.btnCataloCursos.Text = "Catalogo";
             this.btnCataloCursos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -299,7 +284,7 @@
             this.btnCursos.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCursos.Location = new System.Drawing.Point(0, 100);
             this.btnCursos.Name = "btnCursos";
-            this.btnCursos.Size = new System.Drawing.Size(200, 35);
+            this.btnCursos.Size = new System.Drawing.Size(200, 52);
             this.btnCursos.TabIndex = 0;
             this.btnCursos.Text = "Cursos";
             this.btnCursos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -315,6 +300,30 @@
             this.pnllogo.Size = new System.Drawing.Size(200, 100);
             this.pnllogo.TabIndex = 0;
             // 
+            // pnlcontenedor
+            // 
+            this.pnlcontenedor.BackColor = System.Drawing.Color.Violet;
+            this.pnlcontenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlcontenedor.Location = new System.Drawing.Point(200, 0);
+            this.pnlcontenedor.Name = "pnlcontenedor";
+            this.pnlcontenedor.Size = new System.Drawing.Size(722, 693);
+            this.pnlcontenedor.TabIndex = 1;
+            // 
+            // button5
+            // 
+            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(0, 39);
+            this.button5.Name = "button5";
+            this.button5.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.button5.Size = new System.Drawing.Size(200, 77);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "Asignaciones";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -326,20 +335,11 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // pnlcontenedor
-            // 
-            this.pnlcontenedor.BackColor = System.Drawing.Color.Violet;
-            this.pnlcontenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlcontenedor.Location = new System.Drawing.Point(200, 0);
-            this.pnlcontenedor.Name = "pnlcontenedor";
-            this.pnlcontenedor.Size = new System.Drawing.Size(722, 559);
-            this.pnlcontenedor.TabIndex = 1;
-            // 
             // FRMMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(922, 559);
+            this.ClientSize = new System.Drawing.Size(922, 693);
             this.Controls.Add(this.pnlcontenedor);
             this.Controls.Add(this.pnlmenulateral);
             this.Name = "FRMMenu";
@@ -367,7 +367,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnMenuCatedraticos;
         private System.Windows.Forms.Panel pnlSubMenuCatedraticos;
-        private System.Windows.Forms.Button btnAsignacionCatedraticos;
         private System.Windows.Forms.Button btnCatedraticos;
         private System.Windows.Forms.Panel pnlSubMenuEstudiantes;
         private System.Windows.Forms.Button button3;
@@ -376,5 +375,6 @@
         private System.Windows.Forms.Button btnAsignaciones;
         private System.Windows.Forms.Button btnGrupos;
         private System.Windows.Forms.Button btnCalificaciones;
+        private System.Windows.Forms.Button button5;
     }
 }

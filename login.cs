@@ -28,12 +28,16 @@ namespace PROYECTOFINALPROGRA1
             {
                 // Oculta el formulario actual
                 this.Hide();
+               // Usuarios usuarios = new Usuarios();
+                //usuarios.Show();
+                Estudiantes est = new Estudiantes();
+                est.Show();
 
                 // Crea una instancia del siguiente formulario
-              FRMMenu fRMMenu = new FRMMenu();
+             // FRMMenu fRMMenu = new FRMMenu();
 
                 // Muestra el siguiente formulario
-              fRMMenu.Show();
+             // fRMMenu.Show();
                 Console.WriteLine("el crud se abrio correctamente");
             }
             else

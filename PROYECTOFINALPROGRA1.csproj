@@ -120,6 +120,12 @@
     <Compile Include="diseños daos\FRMMenu.Designer.cs">
       <DependentUpon>FRMMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="diseños daos\FRMMenuEstudiantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="diseños daos\FRMMenuEstudiantes.Designer.cs">
+      <DependentUpon>FRMMenuEstudiantes.cs</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +169,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="diseños daos\FRMMenu.resx">
       <DependentUpon>FRMMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="diseños daos\FRMMenuEstudiantes.resx">
+      <DependentUpon>FRMMenuEstudiantes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>

@@ -31,19 +31,23 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.DgvCoordinadores = new System.Windows.Forms.DataGridView();
             this.groupDatos = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtApellidosCoordinador = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtprofesioncoordinador = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btneliminarCoordinador = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.btnActualizarCoordinador = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnGuardarCoordinador = new System.Windows.Forms.Button();
-            this.txtedadCoordinador = new System.Windows.Forms.TextBox();
+            this.txtnacimientoCoordinador = new System.Windows.Forms.TextBox();
             this.btnCrearCoordinador = new System.Windows.Forms.Button();
             this.txtfacultadCoordinador = new System.Windows.Forms.TextBox();
             this.txtemailCoordinador = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.Label();
             this.txtdireccionCoordinador = new System.Windows.Forms.TextBox();
-            this.txttelefono = new System.Windows.Forms.TextBox();
+            this.txttelefonoCoordinador = new System.Windows.Forms.TextBox();
             this.txtNombreCoordinador = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -51,7 +55,7 @@
             this.btnBuscarCoordinador = new System.Windows.Forms.Button();
             this.txtIdCoordinadorBuscar = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txnNombreCoordinadorBuscar = new System.Windows.Forms.TextBox();
+            this.txtNombreCoordinadorBuscar = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnListarCorrdinador = new System.Windows.Forms.Button();
             this.BTNS = new System.Windows.Forms.GroupBox();
@@ -92,34 +96,70 @@
             // 
             // groupDatos
             // 
+            this.groupDatos.Controls.Add(this.label8);
+            this.groupDatos.Controls.Add(this.txtApellidosCoordinador);
+            this.groupDatos.Controls.Add(this.label7);
+            this.groupDatos.Controls.Add(this.txtprofesioncoordinador);
             this.groupDatos.Controls.Add(this.label5);
             this.groupDatos.Controls.Add(this.btneliminarCoordinador);
             this.groupDatos.Controls.Add(this.label4);
             this.groupDatos.Controls.Add(this.btnActualizarCoordinador);
             this.groupDatos.Controls.Add(this.label2);
             this.groupDatos.Controls.Add(this.btnGuardarCoordinador);
-            this.groupDatos.Controls.Add(this.txtedadCoordinador);
+            this.groupDatos.Controls.Add(this.txtnacimientoCoordinador);
             this.groupDatos.Controls.Add(this.btnCrearCoordinador);
             this.groupDatos.Controls.Add(this.txtfacultadCoordinador);
             this.groupDatos.Controls.Add(this.txtemailCoordinador);
             this.groupDatos.Controls.Add(this.txtEmail);
             this.groupDatos.Controls.Add(this.txtdireccionCoordinador);
-            this.groupDatos.Controls.Add(this.txttelefono);
+            this.groupDatos.Controls.Add(this.txttelefonoCoordinador);
             this.groupDatos.Controls.Add(this.txtNombreCoordinador);
             this.groupDatos.Controls.Add(this.label3);
             this.groupDatos.Controls.Add(this.label1);
             this.groupDatos.Font = new System.Drawing.Font("Times New Roman", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupDatos.Location = new System.Drawing.Point(12, 12);
             this.groupDatos.Name = "groupDatos";
-            this.groupDatos.Size = new System.Drawing.Size(966, 169);
+            this.groupDatos.Size = new System.Drawing.Size(966, 225);
             this.groupDatos.TabIndex = 15;
             this.groupDatos.TabStop = false;
             this.groupDatos.Text = "DATOS";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(10, 71);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(62, 15);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "Apellidos:";
+            // 
+            // txtApellidosCoordinador
+            // 
+            this.txtApellidosCoordinador.Location = new System.Drawing.Point(99, 64);
+            this.txtApellidosCoordinador.Name = "txtApellidosCoordinador";
+            this.txtApellidosCoordinador.Size = new System.Drawing.Size(371, 22);
+            this.txtApellidosCoordinador.TabIndex = 22;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(498, 100);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(62, 15);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "profesion:";
+            // 
+            // txtprofesioncoordinador
+            // 
+            this.txtprofesioncoordinador.Location = new System.Drawing.Point(604, 100);
+            this.txtprofesioncoordinador.Name = "txtprofesioncoordinador";
+            this.txtprofesioncoordinador.Size = new System.Drawing.Size(345, 22);
+            this.txtprofesioncoordinador.TabIndex = 20;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 66);
+            this.label5.Location = new System.Drawing.Point(10, 103);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(42, 15);
             this.label5.TabIndex = 16;
@@ -127,30 +167,32 @@
             // 
             // btneliminarCoordinador
             // 
-            this.btneliminarCoordinador.Location = new System.Drawing.Point(590, 140);
+            this.btneliminarCoordinador.Location = new System.Drawing.Point(578, 177);
             this.btneliminarCoordinador.Name = "btneliminarCoordinador";
             this.btneliminarCoordinador.Size = new System.Drawing.Size(75, 23);
             this.btneliminarCoordinador.TabIndex = 19;
             this.btneliminarCoordinador.Text = "eliminar";
             this.btneliminarCoordinador.UseVisualStyleBackColor = true;
+            this.btneliminarCoordinador.Click += new System.EventHandler(this.btneliminarCoordinador_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(498, 99);
+            this.label4.Location = new System.Drawing.Point(498, 136);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 15);
+            this.label4.Size = new System.Drawing.Size(121, 15);
             this.label4.TabIndex = 15;
-            this.label4.Text = "Edad:";
+            this.label4.Text = "Fecha de nacimiento:";
             // 
             // btnActualizarCoordinador
             // 
-            this.btnActualizarCoordinador.Location = new System.Drawing.Point(443, 140);
+            this.btnActualizarCoordinador.Location = new System.Drawing.Point(432, 177);
             this.btnActualizarCoordinador.Name = "btnActualizarCoordinador";
             this.btnActualizarCoordinador.Size = new System.Drawing.Size(75, 23);
             this.btnActualizarCoordinador.TabIndex = 18;
             this.btnActualizarCoordinador.Text = "Actualizar";
             this.btnActualizarCoordinador.UseVisualStyleBackColor = true;
+            this.btnActualizarCoordinador.Click += new System.EventHandler(this.btnActualizarCoordinador_Click);
             // 
             // label2
             // 
@@ -163,28 +205,30 @@
             // 
             // btnGuardarCoordinador
             // 
-            this.btnGuardarCoordinador.Location = new System.Drawing.Point(286, 140);
+            this.btnGuardarCoordinador.Location = new System.Drawing.Point(252, 177);
             this.btnGuardarCoordinador.Name = "btnGuardarCoordinador";
             this.btnGuardarCoordinador.Size = new System.Drawing.Size(75, 23);
             this.btnGuardarCoordinador.TabIndex = 17;
             this.btnGuardarCoordinador.Text = "Guardar";
             this.btnGuardarCoordinador.UseVisualStyleBackColor = true;
+            this.btnGuardarCoordinador.Click += new System.EventHandler(this.btnGuardarCoordinador_Click);
             // 
-            // txtedadCoordinador
+            // txtnacimientoCoordinador
             // 
-            this.txtedadCoordinador.Location = new System.Drawing.Point(578, 96);
-            this.txtedadCoordinador.Name = "txtedadCoordinador";
-            this.txtedadCoordinador.Size = new System.Drawing.Size(371, 22);
-            this.txtedadCoordinador.TabIndex = 13;
+            this.txtnacimientoCoordinador.Location = new System.Drawing.Point(649, 133);
+            this.txtnacimientoCoordinador.Name = "txtnacimientoCoordinador";
+            this.txtnacimientoCoordinador.Size = new System.Drawing.Size(300, 22);
+            this.txtnacimientoCoordinador.TabIndex = 13;
             // 
             // btnCrearCoordinador
             // 
-            this.btnCrearCoordinador.Location = new System.Drawing.Point(121, 140);
+            this.btnCrearCoordinador.Location = new System.Drawing.Point(99, 177);
             this.btnCrearCoordinador.Name = "btnCrearCoordinador";
             this.btnCrearCoordinador.Size = new System.Drawing.Size(75, 23);
             this.btnCrearCoordinador.TabIndex = 16;
             this.btnCrearCoordinador.Text = "Crear";
             this.btnCrearCoordinador.UseVisualStyleBackColor = true;
+            this.btnCrearCoordinador.Click += new System.EventHandler(this.btnCrearCoordinador_Click);
             // 
             // txtfacultadCoordinador
             // 
@@ -195,7 +239,7 @@
             // 
             // txtemailCoordinador
             // 
-            this.txtemailCoordinador.Location = new System.Drawing.Point(99, 64);
+            this.txtemailCoordinador.Location = new System.Drawing.Point(99, 100);
             this.txtemailCoordinador.Name = "txtemailCoordinador";
             this.txtemailCoordinador.Size = new System.Drawing.Size(371, 22);
             this.txtemailCoordinador.TabIndex = 11;
@@ -216,12 +260,12 @@
             this.txtdireccionCoordinador.Size = new System.Drawing.Size(371, 22);
             this.txtdireccionCoordinador.TabIndex = 9;
             // 
-            // txttelefono
+            // txttelefonoCoordinador
             // 
-            this.txttelefono.Location = new System.Drawing.Point(99, 92);
-            this.txttelefono.Name = "txttelefono";
-            this.txttelefono.Size = new System.Drawing.Size(371, 22);
-            this.txttelefono.TabIndex = 8;
+            this.txttelefonoCoordinador.Location = new System.Drawing.Point(99, 136);
+            this.txttelefonoCoordinador.Name = "txttelefonoCoordinador";
+            this.txttelefonoCoordinador.Size = new System.Drawing.Size(371, 22);
+            this.txttelefonoCoordinador.TabIndex = 8;
             // 
             // txtNombreCoordinador
             // 
@@ -233,7 +277,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 99);
+            this.label3.Location = new System.Drawing.Point(10, 143);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 15);
             this.label3.TabIndex = 2;
@@ -253,7 +297,7 @@
             this.groupBox1.Controls.Add(this.btnBuscarCoordinador);
             this.groupBox1.Controls.Add(this.txtIdCoordinadorBuscar);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.txnNombreCoordinadorBuscar);
+            this.groupBox1.Controls.Add(this.txtNombreCoordinadorBuscar);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 243);
@@ -288,12 +332,12 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Id:";
             // 
-            // txnNombreCoordinadorBuscar
+            // txtNombreCoordinadorBuscar
             // 
-            this.txnNombreCoordinadorBuscar.Location = new System.Drawing.Point(121, 35);
-            this.txnNombreCoordinadorBuscar.Name = "txnNombreCoordinadorBuscar";
-            this.txnNombreCoordinadorBuscar.Size = new System.Drawing.Size(371, 22);
-            this.txnNombreCoordinadorBuscar.TabIndex = 9;
+            this.txtNombreCoordinadorBuscar.Location = new System.Drawing.Point(121, 35);
+            this.txtNombreCoordinadorBuscar.Name = "txtNombreCoordinadorBuscar";
+            this.txtNombreCoordinadorBuscar.Size = new System.Drawing.Size(371, 22);
+            this.txtNombreCoordinadorBuscar.TabIndex = 9;
             // 
             // label9
             // 
@@ -352,6 +396,7 @@
             this.btnCancelarDelCoordinador.TabIndex = 20;
             this.btnCancelarDelCoordinador.Text = "Cancelar";
             this.btnCancelarDelCoordinador.UseVisualStyleBackColor = true;
+            this.btnCancelarDelCoordinador.Click += new System.EventHandler(this.btnCancelarDelCoordinador_Click);
             // 
             // Coordinadores
             // 
@@ -388,13 +433,13 @@
         private System.Windows.Forms.Button btnActualizarCoordinador;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnGuardarCoordinador;
-        private System.Windows.Forms.TextBox txtedadCoordinador;
+        private System.Windows.Forms.TextBox txtnacimientoCoordinador;
         private System.Windows.Forms.Button btnCrearCoordinador;
         private System.Windows.Forms.TextBox txtfacultadCoordinador;
         private System.Windows.Forms.TextBox txtemailCoordinador;
         private System.Windows.Forms.Label txtEmail;
         private System.Windows.Forms.TextBox txtdireccionCoordinador;
-        private System.Windows.Forms.TextBox txttelefono;
+        private System.Windows.Forms.TextBox txttelefonoCoordinador;
         private System.Windows.Forms.TextBox txtNombreCoordinador;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
@@ -402,12 +447,16 @@
         private System.Windows.Forms.Button btnBuscarCoordinador;
         private System.Windows.Forms.TextBox txtIdCoordinadorBuscar;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txnNombreCoordinadorBuscar;
+        private System.Windows.Forms.TextBox txtNombreCoordinadorBuscar;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnListarCorrdinador;
         private System.Windows.Forms.GroupBox BTNS;
         private System.Windows.Forms.Button btnAnteriorDelCoordinador;
         private System.Windows.Forms.Button btnLimpiarDelCoordinador;
         private System.Windows.Forms.Button btnCancelarDelCoordinador;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtApellidosCoordinador;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtprofesioncoordinador;
     }
 }

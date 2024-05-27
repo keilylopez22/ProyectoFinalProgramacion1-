@@ -34,7 +34,7 @@
             this.btnGuardarFacultad = new System.Windows.Forms.Button();
             this.btnCrearFacultad = new System.Windows.Forms.Button();
             this.txtFacultadICoordinador = new System.Windows.Forms.Label();
-            this.txtIdCoordinadorDeFacultad = new System.Windows.Forms.TextBox();
+            this.txtCoordinadorDeFacultad = new System.Windows.Forms.TextBox();
             this.txtNombreFacultad = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -64,7 +64,7 @@
             this.groupDatos.Controls.Add(this.btnGuardarFacultad);
             this.groupDatos.Controls.Add(this.btnCrearFacultad);
             this.groupDatos.Controls.Add(this.txtFacultadICoordinador);
-            this.groupDatos.Controls.Add(this.txtIdCoordinadorDeFacultad);
+            this.groupDatos.Controls.Add(this.txtCoordinadorDeFacultad);
             this.groupDatos.Controls.Add(this.txtNombreFacultad);
             this.groupDatos.Controls.Add(this.label1);
             this.groupDatos.Font = new System.Drawing.Font("Times New Roman", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -83,6 +83,7 @@
             this.btneliminarFacultad.TabIndex = 19;
             this.btneliminarFacultad.Text = "eliminar";
             this.btneliminarFacultad.UseVisualStyleBackColor = true;
+            this.btneliminarFacultad.Click += new System.EventHandler(this.btneliminarFacultad_Click);
             // 
             // btnActualizarFacultad
             // 
@@ -92,6 +93,7 @@
             this.btnActualizarFacultad.TabIndex = 18;
             this.btnActualizarFacultad.Text = "Actualizar";
             this.btnActualizarFacultad.UseVisualStyleBackColor = true;
+            this.btnActualizarFacultad.Click += new System.EventHandler(this.btnActualizarFacultad_Click);
             // 
             // btnGuardarFacultad
             // 
@@ -101,6 +103,7 @@
             this.btnGuardarFacultad.TabIndex = 17;
             this.btnGuardarFacultad.Text = "Guardar";
             this.btnGuardarFacultad.UseVisualStyleBackColor = true;
+            this.btnGuardarFacultad.Click += new System.EventHandler(this.btnGuardarFacultad_Click);
             // 
             // btnCrearFacultad
             // 
@@ -110,22 +113,23 @@
             this.btnCrearFacultad.TabIndex = 16;
             this.btnCrearFacultad.Text = "Crear";
             this.btnCrearFacultad.UseVisualStyleBackColor = true;
+            this.btnCrearFacultad.Click += new System.EventHandler(this.btnCrearFacultad_Click);
             // 
             // txtFacultadICoordinador
             // 
             this.txtFacultadICoordinador.AutoSize = true;
             this.txtFacultadICoordinador.Location = new System.Drawing.Point(6, 81);
             this.txtFacultadICoordinador.Name = "txtFacultadICoordinador";
-            this.txtFacultadICoordinador.Size = new System.Drawing.Size(92, 15);
+            this.txtFacultadICoordinador.Size = new System.Drawing.Size(79, 15);
             this.txtFacultadICoordinador.TabIndex = 10;
-            this.txtFacultadICoordinador.Text = "Id Coordinador:";
+            this.txtFacultadICoordinador.Text = "Coordinador:";
             // 
-            // txtIdCoordinadorDeFacultad
+            // txtCoordinadorDeFacultad
             // 
-            this.txtIdCoordinadorDeFacultad.Location = new System.Drawing.Point(99, 81);
-            this.txtIdCoordinadorDeFacultad.Name = "txtIdCoordinadorDeFacultad";
-            this.txtIdCoordinadorDeFacultad.Size = new System.Drawing.Size(371, 22);
-            this.txtIdCoordinadorDeFacultad.TabIndex = 9;
+            this.txtCoordinadorDeFacultad.Location = new System.Drawing.Point(99, 81);
+            this.txtCoordinadorDeFacultad.Name = "txtCoordinadorDeFacultad";
+            this.txtCoordinadorDeFacultad.Size = new System.Drawing.Size(371, 22);
+            this.txtCoordinadorDeFacultad.TabIndex = 9;
             // 
             // txtNombreFacultad
             // 
@@ -273,8 +277,9 @@
             this.btnCancelarDeFacultad.TabIndex = 20;
             this.btnCancelarDeFacultad.Text = "Cancelar";
             this.btnCancelarDeFacultad.UseVisualStyleBackColor = true;
+            this.btnCancelarDeFacultad.Click += new System.EventHandler(this.btnCancelarDeFacultad_Click);
             // 
-            // Facultaddise
+            // Facultades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -284,8 +289,9 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupDatos);
-            this.Name = "Facultaddise";
+            this.Name = "Facultades";
             this.Text = "Facultaddise";
+            this.Load += new System.EventHandler(this.Facultades_Load);
             this.groupDatos.ResumeLayout(false);
             this.groupDatos.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -305,7 +311,7 @@
         private System.Windows.Forms.Button btnGuardarFacultad;
         private System.Windows.Forms.Button btnCrearFacultad;
         private System.Windows.Forms.Label txtFacultadICoordinador;
-        private System.Windows.Forms.TextBox txtIdCoordinadorDeFacultad;
+        private System.Windows.Forms.TextBox txtCoordinadorDeFacultad;
         private System.Windows.Forms.TextBox txtNombreFacultad;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;

@@ -10,11 +10,11 @@ namespace PROYECTOFINALPROGRA1.clases
     internal class DaoFacultad
     {
         private string connectionString = "server=localhost;" +
-            "user=progra2024;" +
-            "password=progra2024;" +
-            "database=progra1_2024;";
+            "user=rot;" +
+            "password=;" +
+            "database=lms;";
         //metodo para obtener todos los coordinadores
-        public List<Facultad> ObtenerTodosLosCoordinadores()
+        public List<Facultad> ObtenerTodasLasFacultades()
         {
             List<Facultad> listaDeFacultades = new List<Facultad>();
 
@@ -23,7 +23,7 @@ namespace PROYECTOFINALPROGRA1.clases
                 //abriendo la conexion
                 conn.Open();
                 //diseñando la consulta
-                string querry = "";
+                string querry = "SELECT id, nombre, coordinador FROM facultad";
 
                 using (MySqlCommand cmd = new MySqlCommand(querry, conn))
                 {
@@ -32,6 +32,10 @@ namespace PROYECTOFINALPROGRA1.clases
                         while (reader.Read())
                         {
                             Facultad facultad = new Facultad();
+                            facultad.id = Convert.ToInt32(reader["iD"]);
+                            facultad.nombre = reader["nombre"].ToString();
+                            facultad.coordinador = reader["coordinador"].ToString();
+
 
                             listaDeFacultades.Add(facultad);
                         }
@@ -49,7 +53,7 @@ namespace PROYECTOFINALPROGRA1.clases
             {
                 conn.Open();
 
-                string query = "";
+                string query = "SELEC id, nombre, coordinador FROM facultad WHERE id = @id";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
@@ -60,6 +64,10 @@ namespace PROYECTOFINALPROGRA1.clases
                         if (reader.Read())
                         {
                             Facultad facultad = new Facultad();
+                            facultad.id = Convert.ToInt32(reader["iD"]);
+                            facultad.nombre = reader["nombre"].ToString();
+                            facultad.coordinador = reader["coordinador"].ToString();
+
                             return facultad;
                         }
                         else
@@ -75,9 +83,12 @@ namespace PROYECTOFINALPROGRA1.clases
             using (MySqlConnection conn = new MySqlConnection())
             {
                 conn.Open();
-                string querry = "";
+                string querry = "INSERT INTO facultad (nombre, coordinador) VALUES "+"(@nombre, @coordinador)";
                 using (MySqlCommand cmd = new MySqlCommand(querry, conn))
                 {
+                    cmd.Parameters.AddWithValue("@nombre", facultad.nombre);
+                    cmd.Parameters.AddWithValue("@coordinador", facultad.coordinador);
+                    
                     cmd.ExecuteNonQuery();
                 }
             }
@@ -87,9 +98,13 @@ namespace PROYECTOFINALPROGRA1.clases
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string querry = "";
+                string querry = "UPDATE facultad SET nombre = @nombre, coordinador= @coordinador WHERE id = @id";
                 using (MySqlCommand cmd = new MySqlCommand(querry, conn))
                 {
+
+                    cmd.Parameters.AddWithValue("@nombre", facultad.nombre);
+                    cmd.Parameters.AddWithValue("@coordinador", facultad.coordinador);
+
                     cmd.ExecuteNonQuery();
                 }
             }
@@ -99,7 +114,7 @@ namespace PROYECTOFINALPROGRA1.clases
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "";
+                string query = "DELETE FROM facultad WHERE id = @id";
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@id", id);

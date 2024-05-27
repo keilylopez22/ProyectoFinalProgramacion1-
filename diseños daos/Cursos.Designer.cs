@@ -1,6 +1,6 @@
 ﻿namespace PROYECTOFINALPROGRA1.diseños_daos
 {
-    partial class Cursos
+    partial class CURSOS
     {
         /// <summary>
         /// Required designer variable.
@@ -30,8 +30,6 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnBuscarCurso = new System.Windows.Forms.Button();
-            this.txtIdCursoBuscar = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.txtNombreCursoBuscar = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -42,11 +40,9 @@
             this.btnCancelarDelCurso = new System.Windows.Forms.Button();
             this.btnListarCurso = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtNombreCurso = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.Label();
-            this.txthorarioCurso = new System.Windows.Forms.TextBox();
-            this.txtfacultaddelCurso = new System.Windows.Forms.TextBox();
+            this.txtHorarioCurso = new System.Windows.Forms.TextBox();
+            this.txtFacultaddelCurso = new System.Windows.Forms.TextBox();
             this.btnCrearCurso = new System.Windows.Forms.Button();
             this.btnGuardarCurso = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -54,8 +50,6 @@
             this.btneliminarCurso = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.groupDatos = new System.Windows.Forms.GroupBox();
-            this.txtcoordidCurso = new System.Windows.Forms.TextBox();
-            this.txtCatedraticoCurso = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvCursos)).BeginInit();
@@ -66,8 +60,6 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnBuscarCurso);
-            this.groupBox1.Controls.Add(this.txtIdCursoBuscar);
-            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.txtNombreCursoBuscar);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -86,22 +78,6 @@
             this.btnBuscarCurso.TabIndex = 21;
             this.btnBuscarCurso.Text = "Buscar";
             this.btnBuscarCurso.UseVisualStyleBackColor = true;
-            // 
-            // txtIdCursoBuscar
-            // 
-            this.txtIdCursoBuscar.Location = new System.Drawing.Point(559, 39);
-            this.txtIdCursoBuscar.Name = "txtIdCursoBuscar";
-            this.txtIdCursoBuscar.Size = new System.Drawing.Size(243, 22);
-            this.txtIdCursoBuscar.TabIndex = 11;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(514, 42);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(21, 15);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Id:";
             // 
             // txtNombreCursoBuscar
             // 
@@ -183,6 +159,7 @@
             this.btnCancelarDelCurso.TabIndex = 20;
             this.btnCancelarDelCurso.Text = "Cancelar";
             this.btnCancelarDelCurso.UseVisualStyleBackColor = true;
+            this.btnCancelarDelCurso.Click += new System.EventHandler(this.btnCancelarDelCurso_Click);
             // 
             // btnListarCurso
             // 
@@ -202,15 +179,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre:";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 99);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 15);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Id Catedratico";
-            // 
             // txtNombreCurso
             // 
             this.txtNombreCurso.Location = new System.Drawing.Point(99, 30);
@@ -218,28 +186,19 @@
             this.txtNombreCurso.Size = new System.Drawing.Size(371, 22);
             this.txtNombreCurso.TabIndex = 6;
             // 
-            // txtEmail
+            // txtHorarioCurso
             // 
-            this.txtEmail.AutoSize = true;
-            this.txtEmail.Location = new System.Drawing.Point(476, 33);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(92, 15);
-            this.txtEmail.TabIndex = 10;
-            this.txtEmail.Text = "Id Coordinador:";
+            this.txtHorarioCurso.Location = new System.Drawing.Point(99, 64);
+            this.txtHorarioCurso.Name = "txtHorarioCurso";
+            this.txtHorarioCurso.Size = new System.Drawing.Size(371, 22);
+            this.txtHorarioCurso.TabIndex = 11;
             // 
-            // txthorarioCurso
+            // txtFacultaddelCurso
             // 
-            this.txthorarioCurso.Location = new System.Drawing.Point(99, 64);
-            this.txthorarioCurso.Name = "txthorarioCurso";
-            this.txthorarioCurso.Size = new System.Drawing.Size(371, 22);
-            this.txthorarioCurso.TabIndex = 11;
-            // 
-            // txtfacultaddelCurso
-            // 
-            this.txtfacultaddelCurso.Location = new System.Drawing.Point(578, 64);
-            this.txtfacultaddelCurso.Name = "txtfacultaddelCurso";
-            this.txtfacultaddelCurso.Size = new System.Drawing.Size(371, 22);
-            this.txtfacultaddelCurso.TabIndex = 12;
+            this.txtFacultaddelCurso.Location = new System.Drawing.Point(99, 109);
+            this.txtFacultaddelCurso.Name = "txtFacultaddelCurso";
+            this.txtFacultaddelCurso.Size = new System.Drawing.Size(371, 22);
+            this.txtFacultaddelCurso.TabIndex = 12;
             // 
             // btnCrearCurso
             // 
@@ -249,6 +208,7 @@
             this.btnCrearCurso.TabIndex = 16;
             this.btnCrearCurso.Text = "Crear";
             this.btnCrearCurso.UseVisualStyleBackColor = true;
+            this.btnCrearCurso.Click += new System.EventHandler(this.btnCrearCurso_Click);
             // 
             // btnGuardarCurso
             // 
@@ -258,11 +218,12 @@
             this.btnGuardarCurso.TabIndex = 17;
             this.btnGuardarCurso.Text = "Guardar";
             this.btnGuardarCurso.UseVisualStyleBackColor = true;
+            this.btnGuardarCurso.Click += new System.EventHandler(this.btnGuardarCurso_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(476, 67);
+            this.label2.Location = new System.Drawing.Point(6, 97);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 15);
             this.label2.TabIndex = 14;
@@ -276,6 +237,7 @@
             this.btnActualizarCurso.TabIndex = 18;
             this.btnActualizarCurso.Text = "Actualizar";
             this.btnActualizarCurso.UseVisualStyleBackColor = true;
+            this.btnActualizarCurso.Click += new System.EventHandler(this.btnActualizarCurso_Click);
             // 
             // btneliminarCurso
             // 
@@ -285,6 +247,7 @@
             this.btneliminarCurso.TabIndex = 19;
             this.btneliminarCurso.Text = "eliminar";
             this.btneliminarCurso.UseVisualStyleBackColor = true;
+            this.btneliminarCurso.Click += new System.EventHandler(this.btneliminarCurso_Click);
             // 
             // label5
             // 
@@ -303,13 +266,9 @@
             this.groupDatos.Controls.Add(this.label2);
             this.groupDatos.Controls.Add(this.btnGuardarCurso);
             this.groupDatos.Controls.Add(this.btnCrearCurso);
-            this.groupDatos.Controls.Add(this.txtfacultaddelCurso);
-            this.groupDatos.Controls.Add(this.txthorarioCurso);
-            this.groupDatos.Controls.Add(this.txtEmail);
-            this.groupDatos.Controls.Add(this.txtcoordidCurso);
-            this.groupDatos.Controls.Add(this.txtCatedraticoCurso);
+            this.groupDatos.Controls.Add(this.txtFacultaddelCurso);
+            this.groupDatos.Controls.Add(this.txtHorarioCurso);
             this.groupDatos.Controls.Add(this.txtNombreCurso);
-            this.groupDatos.Controls.Add(this.label3);
             this.groupDatos.Controls.Add(this.label1);
             this.groupDatos.Font = new System.Drawing.Font("Times New Roman", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupDatos.Location = new System.Drawing.Point(12, 12);
@@ -319,21 +278,7 @@
             this.groupDatos.TabStop = false;
             this.groupDatos.Text = "DATOS";
             // 
-            // txtcoordidCurso
-            // 
-            this.txtcoordidCurso.Location = new System.Drawing.Point(578, 25);
-            this.txtcoordidCurso.Name = "txtcoordidCurso";
-            this.txtcoordidCurso.Size = new System.Drawing.Size(371, 22);
-            this.txtcoordidCurso.TabIndex = 9;
-            // 
-            // txtCatedraticoCurso
-            // 
-            this.txtCatedraticoCurso.Location = new System.Drawing.Point(99, 92);
-            this.txtCatedraticoCurso.Name = "txtCatedraticoCurso";
-            this.txtCatedraticoCurso.Size = new System.Drawing.Size(371, 22);
-            this.txtCatedraticoCurso.TabIndex = 8;
-            // 
-            // Cursodise
+            // CURSOS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -343,8 +288,8 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupDatos);
-            this.Name = "Cursodise";
-            this.Text = "Cursodise";
+            this.Name = "CURSOS";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Cursodise_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -360,8 +305,6 @@
         #endregion
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnBuscarCurso;
-        private System.Windows.Forms.TextBox txtIdCursoBuscar;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtNombreCursoBuscar;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -372,11 +315,9 @@
         private System.Windows.Forms.Button btnCancelarDelCurso;
         private System.Windows.Forms.Button btnListarCurso;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNombreCurso;
-        private System.Windows.Forms.Label txtEmail;
-        private System.Windows.Forms.TextBox txthorarioCurso;
-        private System.Windows.Forms.TextBox txtfacultaddelCurso;
+        private System.Windows.Forms.TextBox txtHorarioCurso;
+        private System.Windows.Forms.TextBox txtFacultaddelCurso;
         private System.Windows.Forms.Button btnCrearCurso;
         private System.Windows.Forms.Button btnGuardarCurso;
         private System.Windows.Forms.Label label2;
@@ -384,7 +325,5 @@
         private System.Windows.Forms.Button btneliminarCurso;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupDatos;
-        private System.Windows.Forms.TextBox txtcoordidCurso;
-        private System.Windows.Forms.TextBox txtCatedraticoCurso;
     }
 }

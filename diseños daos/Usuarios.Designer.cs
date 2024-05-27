@@ -37,6 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupListar = new System.Windows.Forms.GroupBox();
             this.txtIdUsuarioBuscar = new System.Windows.Forms.TextBox();
+            this.btnBuscarUsuario = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.txtnombreUsuarioBuscar = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -48,7 +49,6 @@
             this.btnCrearUsuario = new System.Windows.Forms.Button();
             this.btneliminarUsuario = new System.Windows.Forms.Button();
             this.btnActualizarUsuario = new System.Windows.Forms.Button();
-            this.btnBuscarUsuario = new System.Windows.Forms.Button();
             this.btnAnteriorparaUsuario = new System.Windows.Forms.Button();
             this.groupDatos.SuspendLayout();
             this.groupListar.SuspendLayout();
@@ -85,6 +85,7 @@
             // 
             this.txtEmailUsuario.Location = new System.Drawing.Point(578, 25);
             this.txtEmailUsuario.Name = "txtEmailUsuario";
+            this.txtEmailUsuario.ReadOnly = true;
             this.txtEmailUsuario.Size = new System.Drawing.Size(371, 22);
             this.txtEmailUsuario.TabIndex = 9;
             // 
@@ -99,6 +100,7 @@
             // 
             this.txtNombreUsuario.Location = new System.Drawing.Point(99, 30);
             this.txtNombreUsuario.Name = "txtNombreUsuario";
+            this.txtNombreUsuario.ReadOnly = true;
             this.txtNombreUsuario.Size = new System.Drawing.Size(371, 22);
             this.txtNombreUsuario.TabIndex = 6;
             // 
@@ -141,6 +143,15 @@
             this.txtIdUsuarioBuscar.Name = "txtIdUsuarioBuscar";
             this.txtIdUsuarioBuscar.Size = new System.Drawing.Size(243, 22);
             this.txtIdUsuarioBuscar.TabIndex = 11;
+            // 
+            // btnBuscarUsuario
+            // 
+            this.btnBuscarUsuario.Location = new System.Drawing.Point(846, 42);
+            this.btnBuscarUsuario.Name = "btnBuscarUsuario";
+            this.btnBuscarUsuario.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscarUsuario.TabIndex = 8;
+            this.btnBuscarUsuario.Text = "Buscar";
+            this.btnBuscarUsuario.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -252,15 +263,6 @@
             this.btnActualizarUsuario.UseVisualStyleBackColor = true;
             this.btnActualizarUsuario.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
-            // btnBuscarUsuario
-            // 
-            this.btnBuscarUsuario.Location = new System.Drawing.Point(846, 42);
-            this.btnBuscarUsuario.Name = "btnBuscarUsuario";
-            this.btnBuscarUsuario.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscarUsuario.TabIndex = 8;
-            this.btnBuscarUsuario.Text = "Buscar";
-            this.btnBuscarUsuario.UseVisualStyleBackColor = true;
-            // 
             // btnAnteriorparaUsuario
             // 
             this.btnAnteriorparaUsuario.Location = new System.Drawing.Point(1041, 448);
@@ -271,7 +273,7 @@
             this.btnAnteriorparaUsuario.UseVisualStyleBackColor = true;
             this.btnAnteriorparaUsuario.Click += new System.EventHandler(this.btnAnterior_Click);
             // 
-            // UsuariosDis
+            // Usuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -286,7 +288,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupListar);
             this.Controls.Add(this.groupDatos);
-            this.Name = "UsuariosDis";
+            this.Name = "Usuarios";
             this.Text = "usuarios";
             this.Load += new System.EventHandler(this.usuarios_Load);
             this.groupDatos.ResumeLayout(false);

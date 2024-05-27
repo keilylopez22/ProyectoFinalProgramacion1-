@@ -52,11 +52,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtedadEstudiante = new System.Windows.Forms.TextBox();
+            this.txtnacimientoEstudiante = new System.Windows.Forms.TextBox();
             this.txtfacultadDeEstudiante = new System.Windows.Forms.TextBox();
-            this.txtemailEstudiante = new System.Windows.Forms.TextBox();
+            this.txtApellidosEstudiante = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnListarEstudiantes = new System.Windows.Forms.Button();
+            this.txtemailEstudiante = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtprofesiondelestudiante = new System.Windows.Forms.TextBox();
             this.groupListar.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvEstudiantes)).BeginInit();
@@ -71,7 +75,7 @@
             this.groupListar.Controls.Add(this.btnBuscarDeEstudiante);
             this.groupListar.Controls.Add(this.label7);
             this.groupListar.Font = new System.Drawing.Font("Times New Roman", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupListar.Location = new System.Drawing.Point(12, 173);
+            this.groupListar.Location = new System.Drawing.Point(6, 286);
             this.groupListar.Name = "groupListar";
             this.groupListar.Size = new System.Drawing.Size(958, 78);
             this.groupListar.TabIndex = 2;
@@ -109,6 +113,7 @@
             this.btnBuscarDeEstudiante.TabIndex = 11;
             this.btnBuscarDeEstudiante.Text = "Buscar";
             this.btnBuscarDeEstudiante.UseVisualStyleBackColor = true;
+          
             // 
             // label7
             // 
@@ -123,7 +128,7 @@
             // 
             this.groupBox3.Controls.Add(this.DgvEstudiantes);
             this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(6, 286);
+            this.groupBox3.Location = new System.Drawing.Point(6, 362);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(958, 178);
             this.groupBox3.TabIndex = 4;
@@ -146,7 +151,7 @@
             // 
             // btnCrearEstudiante
             // 
-            this.btnCrearEstudiante.Location = new System.Drawing.Point(114, 257);
+            this.btnCrearEstudiante.Location = new System.Drawing.Point(99, 167);
             this.btnCrearEstudiante.Name = "btnCrearEstudiante";
             this.btnCrearEstudiante.Size = new System.Drawing.Size(75, 23);
             this.btnCrearEstudiante.TabIndex = 6;
@@ -156,7 +161,7 @@
             // 
             // btnGuardarEstudiante
             // 
-            this.btnGuardarEstudiante.Location = new System.Drawing.Point(240, 257);
+            this.btnGuardarEstudiante.Location = new System.Drawing.Point(200, 167);
             this.btnGuardarEstudiante.Name = "btnGuardarEstudiante";
             this.btnGuardarEstudiante.Size = new System.Drawing.Size(75, 23);
             this.btnGuardarEstudiante.TabIndex = 7;
@@ -166,7 +171,7 @@
             // 
             // btnActualizarEstudiante
             // 
-            this.btnActualizarEstudiante.Location = new System.Drawing.Point(367, 257);
+            this.btnActualizarEstudiante.Location = new System.Drawing.Point(311, 167);
             this.btnActualizarEstudiante.Name = "btnActualizarEstudiante";
             this.btnActualizarEstudiante.Size = new System.Drawing.Size(75, 23);
             this.btnActualizarEstudiante.TabIndex = 8;
@@ -176,7 +181,7 @@
             // 
             // btneliminarEstudiante
             // 
-            this.btneliminarEstudiante.Location = new System.Drawing.Point(492, 257);
+            this.btneliminarEstudiante.Location = new System.Drawing.Point(419, 167);
             this.btneliminarEstudiante.Name = "btneliminarEstudiante";
             this.btneliminarEstudiante.Size = new System.Drawing.Size(75, 23);
             this.btneliminarEstudiante.TabIndex = 9;
@@ -186,7 +191,7 @@
             // 
             // btnCancelardeEstudiante
             // 
-            this.btnCancelardeEstudiante.Location = new System.Drawing.Point(617, 257);
+            this.btnCancelardeEstudiante.Location = new System.Drawing.Point(530, 167);
             this.btnCancelardeEstudiante.Name = "btnCancelardeEstudiante";
             this.btnCancelardeEstudiante.Size = new System.Drawing.Size(75, 23);
             this.btnCancelardeEstudiante.TabIndex = 10;
@@ -230,7 +235,7 @@
             // 
             // txttelefonoEstudiante
             // 
-            this.txttelefonoEstudiante.Location = new System.Drawing.Point(99, 92);
+            this.txttelefonoEstudiante.Location = new System.Drawing.Point(99, 122);
             this.txttelefonoEstudiante.Name = "txttelefonoEstudiante";
             this.txttelefonoEstudiante.Size = new System.Drawing.Size(371, 22);
             this.txttelefonoEstudiante.TabIndex = 8;
@@ -253,13 +258,22 @@
             // 
             // groupDatos
             // 
+            this.groupDatos.Controls.Add(this.txtprofesiondelestudiante);
+            this.groupDatos.Controls.Add(this.label9);
+            this.groupDatos.Controls.Add(this.label6);
+            this.groupDatos.Controls.Add(this.txtemailEstudiante);
             this.groupDatos.Controls.Add(this.label5);
             this.groupDatos.Controls.Add(this.label4);
             this.groupDatos.Controls.Add(this.label2);
-            this.groupDatos.Controls.Add(this.txtedadEstudiante);
+            this.groupDatos.Controls.Add(this.btnCancelardeEstudiante);
+            this.groupDatos.Controls.Add(this.txtnacimientoEstudiante);
+            this.groupDatos.Controls.Add(this.btneliminarEstudiante);
             this.groupDatos.Controls.Add(this.txtfacultadDeEstudiante);
-            this.groupDatos.Controls.Add(this.txtemailEstudiante);
+            this.groupDatos.Controls.Add(this.btnActualizarEstudiante);
+            this.groupDatos.Controls.Add(this.txtApellidosEstudiante);
+            this.groupDatos.Controls.Add(this.btnGuardarEstudiante);
             this.groupDatos.Controls.Add(this.txtEmail);
+            this.groupDatos.Controls.Add(this.btnCrearEstudiante);
             this.groupDatos.Controls.Add(this.txtdireccionEstudiante);
             this.groupDatos.Controls.Add(this.txttelefonoEstudiante);
             this.groupDatos.Controls.Add(this.txtNombreEstudiante);
@@ -268,7 +282,7 @@
             this.groupDatos.Font = new System.Drawing.Font("Times New Roman", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupDatos.Location = new System.Drawing.Point(15, 27);
             this.groupDatos.Name = "groupDatos";
-            this.groupDatos.Size = new System.Drawing.Size(955, 130);
+            this.groupDatos.Size = new System.Drawing.Size(955, 196);
             this.groupDatos.TabIndex = 3;
             this.groupDatos.TabStop = false;
             this.groupDatos.Text = "DATOS";
@@ -276,7 +290,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 66);
+            this.label5.Location = new System.Drawing.Point(6, 91);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(42, 15);
             this.label5.TabIndex = 16;
@@ -285,46 +299,46 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(498, 99);
+            this.label4.Location = new System.Drawing.Point(498, 122);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 15);
+            this.label4.Size = new System.Drawing.Size(118, 15);
             this.label4.TabIndex = 15;
-            this.label4.Text = "Edad:";
+            this.label4.Text = "fecha de nacimiento:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(498, 67);
+            this.label2.Location = new System.Drawing.Point(498, 94);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 15);
             this.label2.TabIndex = 14;
             this.label2.Text = "facultad:";
             // 
-            // txtedadEstudiante
+            // txtnacimientoEstudiante
             // 
-            this.txtedadEstudiante.Location = new System.Drawing.Point(578, 96);
-            this.txtedadEstudiante.Name = "txtedadEstudiante";
-            this.txtedadEstudiante.Size = new System.Drawing.Size(371, 22);
-            this.txtedadEstudiante.TabIndex = 13;
+            this.txtnacimientoEstudiante.Location = new System.Drawing.Point(622, 119);
+            this.txtnacimientoEstudiante.Name = "txtnacimientoEstudiante";
+            this.txtnacimientoEstudiante.Size = new System.Drawing.Size(318, 22);
+            this.txtnacimientoEstudiante.TabIndex = 13;
             // 
             // txtfacultadDeEstudiante
             // 
-            this.txtfacultadDeEstudiante.Location = new System.Drawing.Point(578, 64);
+            this.txtfacultadDeEstudiante.Location = new System.Drawing.Point(584, 88);
             this.txtfacultadDeEstudiante.Name = "txtfacultadDeEstudiante";
-            this.txtfacultadDeEstudiante.Size = new System.Drawing.Size(371, 22);
+            this.txtfacultadDeEstudiante.Size = new System.Drawing.Size(356, 22);
             this.txtfacultadDeEstudiante.TabIndex = 12;
             // 
-            // txtemailEstudiante
+            // txtApellidosEstudiante
             // 
-            this.txtemailEstudiante.Location = new System.Drawing.Point(99, 64);
-            this.txtemailEstudiante.Name = "txtemailEstudiante";
-            this.txtemailEstudiante.Size = new System.Drawing.Size(371, 22);
-            this.txtemailEstudiante.TabIndex = 11;
+            this.txtApellidosEstudiante.Location = new System.Drawing.Point(99, 60);
+            this.txtApellidosEstudiante.Name = "txtApellidosEstudiante";
+            this.txtApellidosEstudiante.Size = new System.Drawing.Size(371, 22);
+            this.txtApellidosEstudiante.TabIndex = 11;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 99);
+            this.label3.Location = new System.Drawing.Point(1, 122);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 15);
             this.label3.TabIndex = 2;
@@ -339,19 +353,46 @@
             this.btnListarEstudiantes.Text = "Listar";
             this.btnListarEstudiantes.UseVisualStyleBackColor = true;
             // 
+            // txtemailEstudiante
+            // 
+            this.txtemailEstudiante.Location = new System.Drawing.Point(99, 94);
+            this.txtemailEstudiante.Name = "txtemailEstudiante";
+            this.txtemailEstudiante.Size = new System.Drawing.Size(371, 22);
+            this.txtemailEstudiante.TabIndex = 17;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 63);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(58, 15);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Apelidos:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(498, 67);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(62, 15);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "profesion:";
+            // 
+            // txtprofesiondelestudiante
+            // 
+            this.txtprofesiondelestudiante.Location = new System.Drawing.Point(593, 56);
+            this.txtprofesiondelestudiante.Name = "txtprofesiondelestudiante";
+            this.txtprofesiondelestudiante.Size = new System.Drawing.Size(356, 22);
+            this.txtprofesiondelestudiante.TabIndex = 20;
+            // 
             // Estudiantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1085, 494);
+            this.ClientSize = new System.Drawing.Size(1085, 567);
             this.Controls.Add(this.btnListarEstudiantes);
             this.Controls.Add(this.btnAnteriorDeEstudiante);
             this.Controls.Add(this.btnLimpiarDeEstudiante);
-            this.Controls.Add(this.btnCancelardeEstudiante);
-            this.Controls.Add(this.btneliminarEstudiante);
-            this.Controls.Add(this.btnActualizarEstudiante);
-            this.Controls.Add(this.btnGuardarEstudiante);
-            this.Controls.Add(this.btnCrearEstudiante);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupDatos);
             this.Controls.Add(this.groupListar);
@@ -395,9 +436,13 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtedadEstudiante;
+        private System.Windows.Forms.TextBox txtnacimientoEstudiante;
         private System.Windows.Forms.TextBox txtfacultadDeEstudiante;
-        private System.Windows.Forms.TextBox txtemailEstudiante;
+        private System.Windows.Forms.TextBox txtApellidosEstudiante;
         private System.Windows.Forms.Button btnListarEstudiantes;
+        private System.Windows.Forms.TextBox txtemailEstudiante;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtprofesiondelestudiante;
+        private System.Windows.Forms.Label label9;
     }
 }

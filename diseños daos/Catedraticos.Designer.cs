@@ -29,19 +29,23 @@
         private void InitializeComponent()
         {
             this.groupDatos = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtprofesionCatedratico = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txttelefonocatedratico = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btneliminarCatedratico = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.btnActualizarCatedratico = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnGuardarCatedratico = new System.Windows.Forms.Button();
-            this.txtedadCatedratico = new System.Windows.Forms.TextBox();
+            this.txtnacimientoCatedratico = new System.Windows.Forms.TextBox();
             this.btnCrearCatedratico = new System.Windows.Forms.Button();
             this.txtFacultadDeCatedratico = new System.Windows.Forms.TextBox();
-            this.txtemailCatedratico = new System.Windows.Forms.TextBox();
+            this.txtApellidosCatedratico = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.Label();
             this.txtdireccionCatedratico = new System.Windows.Forms.TextBox();
-            this.txttelefonoCatedratico = new System.Windows.Forms.TextBox();
+            this.txtEMAILCatedratico = new System.Windows.Forms.TextBox();
             this.txtNombreCatedratico = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -68,34 +72,70 @@
             // 
             // groupDatos
             // 
+            this.groupDatos.Controls.Add(this.label8);
+            this.groupDatos.Controls.Add(this.txtprofesionCatedratico);
+            this.groupDatos.Controls.Add(this.label7);
+            this.groupDatos.Controls.Add(this.txttelefonocatedratico);
             this.groupDatos.Controls.Add(this.label5);
             this.groupDatos.Controls.Add(this.btneliminarCatedratico);
             this.groupDatos.Controls.Add(this.label4);
             this.groupDatos.Controls.Add(this.btnActualizarCatedratico);
             this.groupDatos.Controls.Add(this.label2);
             this.groupDatos.Controls.Add(this.btnGuardarCatedratico);
-            this.groupDatos.Controls.Add(this.txtedadCatedratico);
+            this.groupDatos.Controls.Add(this.txtnacimientoCatedratico);
             this.groupDatos.Controls.Add(this.btnCrearCatedratico);
             this.groupDatos.Controls.Add(this.txtFacultadDeCatedratico);
-            this.groupDatos.Controls.Add(this.txtemailCatedratico);
+            this.groupDatos.Controls.Add(this.txtApellidosCatedratico);
             this.groupDatos.Controls.Add(this.txtEmail);
             this.groupDatos.Controls.Add(this.txtdireccionCatedratico);
-            this.groupDatos.Controls.Add(this.txttelefonoCatedratico);
+            this.groupDatos.Controls.Add(this.txtEMAILCatedratico);
             this.groupDatos.Controls.Add(this.txtNombreCatedratico);
             this.groupDatos.Controls.Add(this.label3);
             this.groupDatos.Controls.Add(this.label1);
             this.groupDatos.Font = new System.Drawing.Font("Times New Roman", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupDatos.Location = new System.Drawing.Point(33, 12);
+            this.groupDatos.Location = new System.Drawing.Point(25, 24);
             this.groupDatos.Name = "groupDatos";
-            this.groupDatos.Size = new System.Drawing.Size(966, 169);
+            this.groupDatos.Size = new System.Drawing.Size(989, 249);
             this.groupDatos.TabIndex = 5;
             this.groupDatos.TabStop = false;
             this.groupDatos.Text = "DATOS";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(522, 70);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(62, 15);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "profesion:";
+            // 
+            // txtprofesionCatedratico
+            // 
+            this.txtprofesionCatedratico.Location = new System.Drawing.Point(595, 64);
+            this.txtprofesionCatedratico.Name = "txtprofesionCatedratico";
+            this.txtprofesionCatedratico.Size = new System.Drawing.Size(371, 22);
+            this.txtprofesionCatedratico.TabIndex = 22;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(17, 71);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(62, 15);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "Apellidos:";
+            // 
+            // txttelefonocatedratico
+            // 
+            this.txttelefonocatedratico.Location = new System.Drawing.Point(112, 140);
+            this.txttelefonocatedratico.Name = "txttelefonocatedratico";
+            this.txttelefonocatedratico.Size = new System.Drawing.Size(371, 22);
+            this.txttelefonocatedratico.TabIndex = 20;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 66);
+            this.label5.Location = new System.Drawing.Point(14, 103);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(42, 15);
             this.label5.TabIndex = 16;
@@ -103,35 +143,37 @@
             // 
             // btneliminarCatedratico
             // 
-            this.btneliminarCatedratico.Location = new System.Drawing.Point(590, 140);
+            this.btneliminarCatedratico.Location = new System.Drawing.Point(567, 189);
             this.btneliminarCatedratico.Name = "btneliminarCatedratico";
             this.btneliminarCatedratico.Size = new System.Drawing.Size(75, 23);
             this.btneliminarCatedratico.TabIndex = 19;
             this.btneliminarCatedratico.Text = "eliminar";
             this.btneliminarCatedratico.UseVisualStyleBackColor = true;
+            this.btneliminarCatedratico.Click += new System.EventHandler(this.btneliminarCatedratico_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(498, 99);
+            this.label4.Location = new System.Drawing.Point(489, 140);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 15);
+            this.label4.Size = new System.Drawing.Size(123, 15);
             this.label4.TabIndex = 15;
-            this.label4.Text = "Edad:";
+            this.label4.Text = "Fecha de Nacimiento:";
             // 
             // btnActualizarCatedratico
             // 
-            this.btnActualizarCatedratico.Location = new System.Drawing.Point(443, 140);
+            this.btnActualizarCatedratico.Location = new System.Drawing.Point(408, 189);
             this.btnActualizarCatedratico.Name = "btnActualizarCatedratico";
             this.btnActualizarCatedratico.Size = new System.Drawing.Size(75, 23);
             this.btnActualizarCatedratico.TabIndex = 18;
             this.btnActualizarCatedratico.Text = "Actualizar";
             this.btnActualizarCatedratico.UseVisualStyleBackColor = true;
+            this.btnActualizarCatedratico.Click += new System.EventHandler(this.btnActualizarCatedratico_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(498, 67);
+            this.label2.Location = new System.Drawing.Point(522, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 15);
             this.label2.TabIndex = 14;
@@ -139,23 +181,24 @@
             // 
             // btnGuardarCatedratico
             // 
-            this.btnGuardarCatedratico.Location = new System.Drawing.Point(286, 140);
+            this.btnGuardarCatedratico.Location = new System.Drawing.Point(247, 189);
             this.btnGuardarCatedratico.Name = "btnGuardarCatedratico";
             this.btnGuardarCatedratico.Size = new System.Drawing.Size(75, 23);
             this.btnGuardarCatedratico.TabIndex = 17;
             this.btnGuardarCatedratico.Text = "Guardar";
             this.btnGuardarCatedratico.UseVisualStyleBackColor = true;
+            this.btnGuardarCatedratico.Click += new System.EventHandler(this.btnGuardarCatedratico_Click);
             // 
-            // txtedadCatedratico
+            // txtnacimientoCatedratico
             // 
-            this.txtedadCatedratico.Location = new System.Drawing.Point(578, 96);
-            this.txtedadCatedratico.Name = "txtedadCatedratico";
-            this.txtedadCatedratico.Size = new System.Drawing.Size(371, 22);
-            this.txtedadCatedratico.TabIndex = 13;
+            this.txtnacimientoCatedratico.Location = new System.Drawing.Point(618, 137);
+            this.txtnacimientoCatedratico.Name = "txtnacimientoCatedratico";
+            this.txtnacimientoCatedratico.Size = new System.Drawing.Size(345, 22);
+            this.txtnacimientoCatedratico.TabIndex = 13;
             // 
             // btnCrearCatedratico
             // 
-            this.btnCrearCatedratico.Location = new System.Drawing.Point(121, 140);
+            this.btnCrearCatedratico.Location = new System.Drawing.Point(114, 189);
             this.btnCrearCatedratico.Name = "btnCrearCatedratico";
             this.btnCrearCatedratico.Size = new System.Drawing.Size(75, 23);
             this.btnCrearCatedratico.TabIndex = 16;
@@ -165,22 +208,22 @@
             // 
             // txtFacultadDeCatedratico
             // 
-            this.txtFacultadDeCatedratico.Location = new System.Drawing.Point(578, 64);
+            this.txtFacultadDeCatedratico.Location = new System.Drawing.Point(595, 96);
             this.txtFacultadDeCatedratico.Name = "txtFacultadDeCatedratico";
             this.txtFacultadDeCatedratico.Size = new System.Drawing.Size(371, 22);
             this.txtFacultadDeCatedratico.TabIndex = 12;
             // 
-            // txtemailCatedratico
+            // txtApellidosCatedratico
             // 
-            this.txtemailCatedratico.Location = new System.Drawing.Point(99, 64);
-            this.txtemailCatedratico.Name = "txtemailCatedratico";
-            this.txtemailCatedratico.Size = new System.Drawing.Size(371, 22);
-            this.txtemailCatedratico.TabIndex = 11;
+            this.txtApellidosCatedratico.Location = new System.Drawing.Point(99, 64);
+            this.txtApellidosCatedratico.Name = "txtApellidosCatedratico";
+            this.txtApellidosCatedratico.Size = new System.Drawing.Size(371, 22);
+            this.txtApellidosCatedratico.TabIndex = 11;
             // 
             // txtEmail
             // 
             this.txtEmail.AutoSize = true;
-            this.txtEmail.Location = new System.Drawing.Point(498, 33);
+            this.txtEmail.Location = new System.Drawing.Point(524, 33);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(65, 15);
             this.txtEmail.TabIndex = 10;
@@ -188,17 +231,17 @@
             // 
             // txtdireccionCatedratico
             // 
-            this.txtdireccionCatedratico.Location = new System.Drawing.Point(578, 25);
+            this.txtdireccionCatedratico.Location = new System.Drawing.Point(595, 26);
             this.txtdireccionCatedratico.Name = "txtdireccionCatedratico";
             this.txtdireccionCatedratico.Size = new System.Drawing.Size(371, 22);
             this.txtdireccionCatedratico.TabIndex = 9;
             // 
-            // txttelefonoCatedratico
+            // txtEMAILCatedratico
             // 
-            this.txttelefonoCatedratico.Location = new System.Drawing.Point(99, 92);
-            this.txttelefonoCatedratico.Name = "txttelefonoCatedratico";
-            this.txttelefonoCatedratico.Size = new System.Drawing.Size(371, 22);
-            this.txttelefonoCatedratico.TabIndex = 8;
+            this.txtEMAILCatedratico.Location = new System.Drawing.Point(99, 92);
+            this.txtEMAILCatedratico.Name = "txtEMAILCatedratico";
+            this.txtEMAILCatedratico.Size = new System.Drawing.Size(371, 22);
+            this.txtEMAILCatedratico.TabIndex = 8;
             // 
             // txtNombreCatedratico
             // 
@@ -210,7 +253,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 99);
+            this.label3.Location = new System.Drawing.Point(14, 147);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 15);
             this.label3.TabIndex = 2;
@@ -219,7 +262,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 33);
+            this.label1.Location = new System.Drawing.Point(17, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 15);
             this.label1.TabIndex = 0;
@@ -233,7 +276,7 @@
             this.groupBox1.Controls.Add(this.txtNombreCatedraticoBuscar);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(33, 187);
+            this.groupBox1.Location = new System.Drawing.Point(33, 279);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(958, 78);
             this.groupBox1.TabIndex = 12;
@@ -285,7 +328,7 @@
             // 
             this.groupBox3.Controls.Add(this.DgvCatedraticos);
             this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(33, 271);
+            this.groupBox3.Location = new System.Drawing.Point(33, 373);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(958, 178);
             this.groupBox3.TabIndex = 13;
@@ -386,12 +429,12 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtedadCatedratico;
+        private System.Windows.Forms.TextBox txtnacimientoCatedratico;
         private System.Windows.Forms.TextBox txtFacultadDeCatedratico;
-        private System.Windows.Forms.TextBox txtemailCatedratico;
+        private System.Windows.Forms.TextBox txtApellidosCatedratico;
         private System.Windows.Forms.Label txtEmail;
         private System.Windows.Forms.TextBox txtdireccionCatedratico;
-        private System.Windows.Forms.TextBox txttelefonoCatedratico;
+        private System.Windows.Forms.TextBox txtEMAILCatedratico;
         private System.Windows.Forms.TextBox txtNombreCatedratico;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
@@ -413,5 +456,9 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button btnLimpiarDeCatedratico;
         private System.Windows.Forms.Button btnAnteriorDeCatedratico;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txttelefonocatedratico;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtprofesionCatedratico;
     }
 }

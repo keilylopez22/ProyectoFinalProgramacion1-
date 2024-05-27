@@ -136,10 +136,10 @@ namespace PROYECTOFINALPROGRA1
         {
             DataGridViewRow Fila = DgvUsuarios.SelectedRows[0];
             txtNombreUsuario.Text = (String)Fila.Cells[1].Value;
+            txtEmailUsuario.Text = (String)Fila.Cells[2].Value;
+            txtcontrasenaUsuario.Text = (String)Fila.Cells[1].Value;
            
-            txtcontrasenaUsuario.Text = (String)Fila.Cells[2].Value;
            
-            txtEmailUsuario.Text = (String)Fila.Cells[3].Value;
 
             habilitarCampos(false);
             HabilitarbtnGuardarCancelar(true);
